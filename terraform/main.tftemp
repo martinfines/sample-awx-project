@@ -48,4 +48,12 @@ module "instance2" {
   pubkey_path = var.pubkey_path
 }
 
-
+module "instance3" {
+  source = "./instance"
+  region = "europe-west1"
+  subnet_name = module.network.subnet_name
+  machine_type = "e2-medium"
+  instance_name = "proxy-server"
+  role = "proxy"
+  pubkey_path = var.pubkey_path
+}
