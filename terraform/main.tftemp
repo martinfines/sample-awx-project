@@ -28,7 +28,7 @@ module "network" {
 }
 
 module "instance1" {
-  count = 3
+  count = 2
   source = "./instance"
   region = "europe-west1"
   subnet_name = module.network.subnet_name
