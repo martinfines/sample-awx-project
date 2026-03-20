@@ -47,5 +47,3 @@ module "instance2" {
   role = "proxy"
   pubkey_path = var.pubkey_path
 }
-
-
