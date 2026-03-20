@@ -3,7 +3,7 @@ pipeline {
     environment {
         TF_VAR_gcp_project = "qwiklabs-gcp-02-bd036c7a6505"
         TF_VAR_bucket = "tf-remote-state-student_02_8dab0013c1c9-27869-18702"
-        REPOSITORY = "https://github.com/hashicorp/terraform-provider-scaffolding-framework.git"
+        REPOSITORY = "https://github.com/martinfines/sample-awx-project.git"
         TF_VAR_pubkey_path = "${WORKSPACE}/ansible_key.pub"
     }
     stages {
